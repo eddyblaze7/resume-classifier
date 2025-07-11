@@ -7,11 +7,15 @@ import joblib
 import os
 
 # Load labeled resume dataset
-df = pd.read_csv('data/labeled_resume_data.csv')
+#df = pd.read_csv('data/labeled_resume_data.csv')
+df = pd.read_csv('data/gpt_dataset.csv')
 
 # Split data
-X = df['text']
-y = df['label']
+# X = df['text']
+# y = df['label']
+
+X = df['Resume']
+y = df['Category']
 
 # Convert text to TF-IDF features
 vectorizer = TfidfVectorizer(stop_words='english')

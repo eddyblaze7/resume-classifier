@@ -14,7 +14,7 @@ A Streamlit app that uses machine learning to classify resumes into different te
 - Python
 - Scikit-learn
 - Streamlit
-- PyPDF2
+- pypdf
 - Pandas
 
 ## 🚀 Getting Started
